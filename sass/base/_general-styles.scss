@@ -1,0 +1,81 @@
+header {
+  border: 1px solid #ececec;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none; /* Убираем маркеры */
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0; /* Отступ слева в браузере IE и Opera */
+  padding-left: 0; /* Отступ слева в браузере Firefox, Safari, Chrome */
+}
+
+address {
+  font-style: normal;
+}
+
+.container {
+  // для секций студии
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 1200px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.button {
+  display: inline-block;
+  box-sizing: border-box;
+  min-width: 200px;
+  min-height: 50px;
+  border-radius: 4px;
+  /* border: 1px solid transparent; */
+  padding: 10px 32px;
+  /* align-items: center; */
+  text-align: center;
+}
+
+.title {
+  // для заголовков секций студии
+  display: block;
+  margin: 0 0 50px 0;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $dark-main-color;
+}

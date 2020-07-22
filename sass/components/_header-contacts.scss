@@ -1,0 +1,36 @@
+.contacts-flex {
+  display: flex;
+  margin-left: auto;
+}
+
+.contacts a:not(:last-child) {
+  margin-right: 30px;
+}
+
+.contacts > a {
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: $text-color;
+  /* fill: var(--color2, #757575); */
+
+  transition: color $timing-animation;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    /* fill: $accent-color; */
+    --color2: #2196f3;
+  }
+}
+
+.hdr-icon {
+  margin-right: 10px;
+  fill: var(--color2, #757575);
+  transition: fill $timing-animation;
+}

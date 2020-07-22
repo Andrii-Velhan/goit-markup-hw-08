@@ -1,0 +1,50 @@
+/* Постоянные клиенты  */
+
+.customer-box {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.customer-items {
+  @include centredFlex;
+}
+
+.customer-item {
+  @include centredFlex;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.customer-link {
+  @include centredFlex;
+  width: 170px;
+  height: 90px;
+  border: 1px solid $primary-icon-color;
+  box-sizing: border-box;
+  border-radius: 4px;
+  overflow: hidden;
+  /* color: $primary-icon-color; */
+  fill: var(--color1, $primary-icon-color);
+
+  transition: border $timing-animation;
+}
+
+.customer-icon {
+  /* fill: currentColor; */
+  fill: var(--color3, $primary-icon-color);
+  transition: fill $timing-animation;
+}
+
+.customer-link:hover,
+.customer-link:focus {
+  border: 1px solid $accent-color;
+  --color3: #2196f3;
+}
+
+/* .customer-link:hover .customer-icon,
+  .customer-link:focus .customer-icon {
+    --color1: $accent-color;
+  } */
+
+/* Постоянные клиенты */

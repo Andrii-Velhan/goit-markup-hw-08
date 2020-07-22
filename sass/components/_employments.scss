@@ -1,0 +1,42 @@
+/* Чем мы занимаемся */
+
+.employments {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+
+  &-item {
+    position: relative;
+  }
+
+  &-name {
+    @include centredFlex;
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    width: 100%;
+    margin: 0;
+    /* тимчасово */
+    height: 70px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.71;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: $primary-white-color;
+    background: $background-primary-dark;
+  }
+}
+
+.employments-container {
+  padding-bottom: 94px;
+}
+
+.employments li:not(:last-child) {
+  margin-right: 30px;
+}

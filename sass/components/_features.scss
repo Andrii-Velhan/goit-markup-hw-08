@@ -1,0 +1,68 @@
+/* Особенности _features*/
+
+.feature-container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.feature-items {
+  display: flex;
+  justify-content: space-between;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.feature-items li:not(:last-child) {
+  margin-right: 30px;
+}
+
+.feature-items h3 {
+  display: block;
+  margin-top: 30px;
+  margin-bottom: 10px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $dark-main-color;
+}
+
+.feature-items p {
+  display: block;
+  margin: 0px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $text-color;
+}
+
+.feature-item:before {
+  display: block;
+  content: '';
+  height: 120px;
+  background-color: $background-primary-gray;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon-antenna::before {
+  background-image: url(../images/antenna.svg);
+}
+
+.icon-clock::before {
+  background-image: url(../images/clock.svg);
+}
+
+.icon-diagram::before {
+  background-image: url(../images/diagram.svg);
+}
+
+.icon-astronaut::before {
+  background-image: url(../images/astronaut.svg);
+}

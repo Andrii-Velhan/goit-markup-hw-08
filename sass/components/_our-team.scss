@@ -1,0 +1,89 @@
+/* Наша команда */
+.our-team-bg {
+  background-color: $background-primary-gray;
+}
+
+.team-box {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  /* outline: 1px solid yellow; */
+  /* background: #2196f3; */
+}
+
+.team-body {
+  background: $primary-white-color;
+  border-radius: 0px 0px 4px 4px;
+  overflow: hidden;
+  padding-bottom: 24px;
+}
+
+.team-items {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.team-items > li {
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 0px 0px 4px 4px;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+/* .team-body h3 */
+.team-name {
+  display: block;
+  margin-bottom: 10px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $dark-main-color;
+}
+
+/* .team-body p */
+.team-function {
+  display: block;
+  margin-bottom: 16px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $text-color;
+}
+
+.social-link {
+  @include centredFlex;
+}
+
+.social-link-svg {
+  @include centredFlex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  transition: background-color $timing-animation;
+}
+
+.social-link li:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-icon {
+  fill: var(--color1, $primary-icon-color);
+  transition: fill $timing-animation;
+}
+
+.social-link a:hover,
+.social-link a:focus {
+  --color1: #ffffff;
+  background-color: $accent-color;
+  outline-width: 0px;
+}

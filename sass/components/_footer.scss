@@ -1,0 +1,197 @@
+/* <footer> */
+
+footer {
+  background: $primary-footer-color;
+}
+
+.company-address {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 60px;
+  margin-bottom: 60px;
+  min-width: 231px;
+
+  & > a {
+    margin-bottom: 8px;
+  }
+}
+
+.footer-address > a {
+  display: block;
+  margin-top: 9px;
+}
+
+.logo-studio-bottom {
+  color: $primary-white-color;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  /*   */
+}
+
+.footer-top-box {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.studio-social-links {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin: 20px 0 0 0;
+}
+
+.footer-address {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $primary-white-color;
+
+  & a {
+    color: rgba(255, 255, 255, 0.6);
+
+    &:hover,
+    &:focus {
+      cursor: url(../images/finger.svg), pointer;
+    }
+  }
+}
+
+.join {
+  height: 41%;
+  margin-left: 69px;
+}
+
+.join b {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $primary-white-color;
+  margin-bottom: 10px;
+}
+
+.join a {
+  /* display: flex; */
+  color: $primary-white-color;
+}
+
+.social-icon-fr {
+  /* width: 20px;
+    height: 20px; */
+  fill: var(--color1, #ffffff);
+}
+
+.sl-fr {
+  @include centredFlex;
+}
+
+.sl-fr a {
+  background: rgba(255, 255, 255, 0.1);
+  transition: background-color $timing-animation;
+
+  &:hover,
+  &:focus {
+    cursor: url(../images/finger.svg), pointer;
+  }
+}
+
+.subscribe-form {
+  display: flex;
+  /* flex-direction: column; */
+  margin-left: 94px;
+}
+
+.subscribe-label {
+  margin-right: 10px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+
+  color: $primary-white-color;
+
+  /* height: 45%; */
+}
+
+.subscribe-title {
+  display: inline-block;
+
+  margin-bottom: 10px;
+  margin-right: auto;
+  /* margin-left: 0px; */
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $primary-white-color;
+}
+
+.subscribe-button {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-top: auto;
+
+  width: 200px;
+  height: 50px;
+  padding: 10px 62px 10px 29px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+
+  letter-spacing: 0.06em;
+  /* Вигляд кнопки змінити, коли форму розмітимо */
+  color: $primary-white-color;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+
+  transition: color $timing-animation, background-color $timing-animation;
+
+  &:hover,
+  &:focus {
+    color: $primary-white-color;
+    background-color: $accent-color;
+    /* outline-width: 0px; */
+    cursor: url(../images/icon-send.svg), pointer;
+  }
+}
+
+.email-subscribe {
+  display: inline-block;
+  /* align-items: center; */
+
+  margin-left: 0;
+  height: 50px;
+  padding-left: 16px;
+  /* padding-top: 15px;
+    padding-bottom: 15px; */
+  width: 100%;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.25px;
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+  background-color: $primary-footer-color;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
