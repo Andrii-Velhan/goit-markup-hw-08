@@ -28,12 +28,26 @@ address {
 
 .container {
   // для секций студии
+  //  for mobile devices
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
 
-  width: 1200px;
+  @media screen and (min-width: $mobile-upper) {
+    // for tablet devices
+    width: 480px;
+  }
+
+  @media screen and (min-width: $tablet-upper) {
+    // for small desctop devices
+    width: 768px;
+  }
+
+  @media screen and (min-width: $desctop-sm-upper) {
+    // for large desctop devices
+    width: 1200px;
+  }
 }
 
 img {
