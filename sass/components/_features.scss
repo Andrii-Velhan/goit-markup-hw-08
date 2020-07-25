@@ -1,26 +1,28 @@
 /* Особенности _features*/
 
 .feature-container {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
+  padding-top: 60px;
+  padding-bottom: 60px;
 
-.feature-items {
-  display: flex;
-  justify-content: space-between;
-
-  &:not(:last-child) {
-    margin-right: 30px;
+  @media screen and (min-width: $desctop) {
+    // for large desctop devices
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 
-.feature-items li:not(:last-child) {
-  margin-right: 30px;
+.feature-items {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+    // justify-content: flex-start;
+  }
 }
 
 .feature-items h3 {
   display: block;
-  margin-top: 30px;
+  margin-top: 0;
   margin-bottom: 10px;
 
   font-weight: 700;
@@ -29,6 +31,11 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: $dark-main-color;
+
+  @media screen and (max-width: 767px) {
+    // for large desctop devices
+    text-align: center;
+  }
 }
 
 .feature-items p {
@@ -42,13 +49,34 @@
   color: $text-color;
 }
 
-.feature-item:before {
-  display: block;
-  content: '';
-  height: 120px;
-  background-color: $background-primary-gray;
-  background-repeat: no-repeat;
-  background-position: center;
+.feature-item {
+  &:before {
+    display: block;
+    content: '';
+    height: 120px;
+    background-color: $background-primary-gray;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    // width: 50%;
+    width: calc((100%-2 * 30px) / 2);
+    margin: 15px;
+  }
+
+  @media screen and (min-width: $desctop) {
+    // width: 25%;
+    width: calc((100%-4 * 30px) / 4);
+  }
+
+  &:not(:last-child) {
+    // переробити правильно !!!!
+    @media screen and (max-width: 768px) {
+      margin-bottom: 30px;
+    }
+  }
 }
 
 .icon-antenna::before {

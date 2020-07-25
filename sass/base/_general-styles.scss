@@ -34,18 +34,18 @@ address {
   margin-left: auto;
   margin-right: auto;
 
-  @media screen and (min-width: $mobile-upper) {
-    // for tablet devices
+  @media screen and (min-width: $mobile) {
+    // for mobile devices
     width: 480px;
   }
 
-  @media screen and (min-width: $tablet-upper) {
-    // for small desctop devices
+  @media screen and (min-width: $tablet) {
+    // for tablet devices
     width: 768px;
   }
 
-  @media screen and (min-width: $desctop-sm-upper) {
-    // for large desctop devices
+  @media screen and (min-width: $desctop) {
+    // for desctop devices
     width: 1200px;
   }
 }

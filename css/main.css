@@ -239,15 +239,24 @@ img {
 }
 
 .hero h1 {
+  font-family: Roboto;
+  font-style: normal;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
   margin-top: 0;
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .hero h1 {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .order {
@@ -590,30 +599,31 @@ img {
 
 /* Особенности _features*/
 .feature-container {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
-.feature-items {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+@media screen and (min-width: 1200px) {
+  .feature-container {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
-.feature-items:not(:last-child) {
-  margin-right: 30px;
-}
-
-.feature-items li:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 768px) {
+  .feature-items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: -15px;
+  }
 }
 
 .feature-items h3 {
   display: block;
-  margin-top: 30px;
+  margin-top: 0;
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
@@ -621,6 +631,12 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #212121;
+}
+
+@media screen and (max-width: 767px) {
+  .feature-items h3 {
+    text-align: center;
+  }
 }
 
 .feature-items p {
@@ -640,6 +656,26 @@ img {
   background-color: #f5f4fa;
   background-repeat: no-repeat;
   background-position: center;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .feature-item {
+    width: calc((100%-2 * 30px) / 2);
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .feature-item {
+    width: calc((100%-4 * 30px) / 4);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .feature-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 .icon-antenna::before {
