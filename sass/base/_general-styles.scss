@@ -84,7 +84,7 @@ img {
 .title {
   // для заголовков секций студии
   display: block;
-  margin: 0 0 50px 0;
+  margin: 0 0 30px 0;
 
   font-weight: 700;
   font-size: 36px;
@@ -92,4 +92,8 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: $dark-main-color;
+
+  @media screen and (min-width: $desctop) {
+    margin-bottom: 50px;
+  }
 }
