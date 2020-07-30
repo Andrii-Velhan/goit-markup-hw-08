@@ -7,11 +7,13 @@
 
 .customer-items {
   @include centredFlex;
-  margin: -15px;
+  display: block;
 
   @media screen and (min-width: $tablet) {
     display: flex;
     flex-wrap: wrap;
+
+    margin: -15px;
   }
 }
 
