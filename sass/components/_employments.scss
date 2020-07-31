@@ -3,7 +3,7 @@
 .employments-container {
   padding-bottom: 94px;
 
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: $desctop-1px) {
     display: none;
   }
 }

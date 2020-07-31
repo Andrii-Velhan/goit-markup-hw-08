@@ -32,7 +32,7 @@
   text-transform: uppercase;
   color: $dark-main-color;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: $tablet-1px) {
     // for large desctop devices
     text-align: center;
   }
@@ -73,7 +73,7 @@
 
   &:not(:last-child) {
     // переробити правильно !!!!
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: $tablet-1px) {
       margin-bottom: 30px;
     }
   }

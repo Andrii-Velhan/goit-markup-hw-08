@@ -47,7 +47,7 @@
 
   &:not(:last-child) {
     // переробити правильно !!!!
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: $tablet-1px) {
       margin-bottom: 30px;
     }
   }
