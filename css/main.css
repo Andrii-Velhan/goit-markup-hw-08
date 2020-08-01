@@ -1011,8 +1011,12 @@ footer {
 
 .company-address {
   display: block;
-  margin-top: 60px;
-  margin-bottom: 60px;
+}
+
+@media screen and (max-width: calc(768px - 1px)) {
+  .company-address {
+    margin-bottom: 60px;
+  }
 }
 
 @media screen and (max-width: calc(1200px - 1px)) {
@@ -1152,7 +1156,6 @@ footer {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-bottom: 60px;
   }
 }
 
@@ -1206,6 +1209,32 @@ footer {
   cursor: url(../images/finger.svg), pointer;
 }
 
+.company-address-join {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .company-address-join {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .company-address-join {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
 .subscribe-form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1232,6 +1261,11 @@ footer {
 }
 
 .subscribe-label {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: 450px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;

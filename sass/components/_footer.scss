@@ -5,10 +5,12 @@ footer {
 }
 
 .company-address {
+  // position: relative;
   display: block;
-  // margin-top: 60px; НЕ ПРАЦЮЄ
-  margin-top: 60px;
-  margin-bottom: 60px;
+
+  @media screen and (max-width: $tablet-1px) {
+    margin-bottom: 60px;
+  }
 
   @media screen and (max-width: $desctop-1px) {
     display: flex;
@@ -49,6 +51,13 @@ footer {
     flex-direction: column;
     align-items: center;
   }
+
+  @media screen and (min-width: $tablet) {
+    // display: flex;
+    // align-items: baseline;
+    // justify-content: space-evenly;
+  }
+
   @media screen and (min-width: $desctop) {
     display: flex;
     align-items: baseline;
@@ -93,7 +102,6 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 60px;
   }
 
   @media screen and (min-width: $desctop) {
@@ -137,11 +145,32 @@ footer {
   }
 }
 
+.company-address-join {
+  // margin-top: 60px; НЕ ПРАЦЮЄ для width: 480-1199зpx
+  // padding-top: 60px; працює
+  margin-top: 60px;
+  margin-bottom: 60px;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+  }
+
+  @media screen and (min-width: $desctop) {
+    justify-content: space-between;
+  }
+}
+
 .subscribe-form {
   display: flex;
   /* flex-direction: column; */
 
+  // @media screen and (min-width: $tablet) {
+
+  // }
+
   @media screen and (max-width: $desctop-1px) {
+    // position: absolute;
     flex-direction: column;
     align-items: center;
   }
@@ -151,6 +180,11 @@ footer {
 }
 
 .subscribe-label {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: 450px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
