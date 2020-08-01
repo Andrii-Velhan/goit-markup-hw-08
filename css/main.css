@@ -1325,7 +1325,8 @@ footer {
   letter-spacing: 0.06em;
   /* Вигляд кнопки змінити, коли форму розмітимо */
   color: #ffffff;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: #2196f3;
+  border-color: #2196f3;
   border-radius: 4px;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1369,18 +1370,49 @@ footer {
   padding-bottom: 94px;
 }
 
+.filters-box {
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .filters-box {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .filters-box {
+    margin-bottom: 50px;
+  }
+}
+
+.filters-greed {
+  margin-bottom: -15px;
+  margin-left: -8px;
+}
+
 .filters {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 34px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
-.filters > li:not(:last-child) {
+@media screen and (min-width: 768px) {
+  .filters {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.filters > li {
   margin-right: 8px;
+  margin-bottom: 15px;
 }
 
 .filters button {
@@ -1432,20 +1464,26 @@ footer {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  /* margin: 15px; */
+  margin: -15px;
 }
 
-.clients-item {
-  width: calc((100% - 30px * 2) / 3);
-  margin-right: 30px;
+@media screen and (min-width: 768px) {
+  .clients-item {
+    width: calc((100% - 2 * 30px) / 2);
+    margin: 15px;
+  }
 }
 
-.clients-item:nth-child(3n) {
-  margin-right: 0;
+@media screen and (min-width: 1200px) {
+  .clients-item {
+    width: calc((100% - 3 * 30px) / 3);
+  }
 }
 
-.clients-item:nth-child(n + 4) {
-  margin-top: 30px;
+@media screen and (max-width: calc(768px - 1px)) {
+  .clients-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 .clients-list h2 {

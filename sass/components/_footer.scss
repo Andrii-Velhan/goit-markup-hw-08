@@ -247,7 +247,8 @@ footer {
   letter-spacing: 0.06em;
   /* Вигляд кнопки змінити, коли форму розмітимо */
   color: $primary-white-color;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: $accent-color;
+  border-color: $accent-color;
   border-radius: 4px;
 
   transition: color $timing-animation, background-color $timing-animation;
