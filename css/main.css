@@ -1210,7 +1210,7 @@ footer {
 }
 
 .company-address-join {
-  margin-top: 60px;
+  padding-top: 60px;
   margin-bottom: 60px;
 }
 
@@ -1388,7 +1388,13 @@ footer {
 
 .filters-greed {
   margin-bottom: -15px;
-  margin-left: -8px;
+}
+
+@media screen and (min-width: 768px) {
+  .filters-greed {
+    margin-bottom: 0;
+    margin-right: -8px;
+  }
 }
 
 .filters {
@@ -1413,6 +1419,12 @@ footer {
 .filters > li {
   margin-right: 8px;
   margin-bottom: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .filters > li {
+    margin-bottom: 0;
+  }
 }
 
 .filters button {
@@ -1444,6 +1456,9 @@ footer {
 .card-discription p {
   display: block;
   margin: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .card-title {
@@ -1465,6 +1480,7 @@ footer {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: -15px;
+  padding-left: 15px;
 }
 
 @media screen and (min-width: 768px) {

@@ -21,7 +21,11 @@
 
 .filters-greed {
   margin-bottom: -15px;
-  margin-left: -8px;
+
+  @media screen and(min-width: $tablet) {
+    margin-bottom: 0;
+    margin-right: -8px;
+  }
 }
 
 .filters {
@@ -36,7 +40,11 @@
 
 .filters > li {
   margin-right: 8px;
+
   margin-bottom: 15px;
+  @media screen and(min-width: $tablet) {
+    margin-bottom: 0;
+  }
 }
 
 .filters button {
@@ -70,6 +78,9 @@
 .card-discription p {
   display: block;
   margin: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .card-title {
@@ -88,6 +99,7 @@
   display: flex;
   flex-wrap: wrap;
   margin: -15px;
+  padding-left: 15px;
 }
 
 .clients-item {
