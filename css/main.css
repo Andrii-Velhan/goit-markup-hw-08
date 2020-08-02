@@ -106,18 +106,87 @@ img {
   color: #2196f3;
   font-family: Raleway, sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
+}
+
+@media screen and (min-width: 1200px) {
+  .logo-web {
+    font-size: 26px;
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .logo-studio-top {
   color: #000000;
   font-family: Raleway, sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
+}
+
+@media screen and (min-width: 1200px) {
+  .logo-studio-top {
+    font-size: 26px;
+    font-size: 26px;
+    line-height: 1.19;
+  }
+}
+
+.menu-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  -webkit-transform: translateY(10px) translateX(-15px);
+          transform: translateY(10px) translateX(-15px);
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.menu-button .icon-cross {
+  display: none;
+}
+
+.menu-button.is-open .icon-cross {
+  display: block;
+}
+
+.menu-button.is-open .icon-menu {
+  display: none;
+}
+
+.page-header {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 60px;
+}
+
+.menu-container {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: yellow;
+  padding: 20px;
+  text-align: center;
+}
+
+.menu-container.is-open {
+  display: block;
 }
 
 .nav-link {
@@ -1061,10 +1130,17 @@ footer {
   color: #ffffff;
   font-family: Raleway, sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
-  /*   */
+}
+
+@media screen and (min-width: 1200px) {
+  .logo-studio-bottom {
+    font-size: 26px;
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 @media screen and (max-width: calc(480px - 1px)) {
